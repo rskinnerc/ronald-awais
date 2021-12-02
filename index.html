@@ -13,12 +13,15 @@
   </p>
   <form action="" id="survey-form">
     <label for="name" id="name-label">Name</label>
-    <input id="name" type="text" placeholder="Enter your name">
+    <input required id="name" type="text" placeholder="Enter your name">
     <label for="email" id="email-label">Email</label>
-    <input type="email" id="email" placeholder="Enter your e-mail address">
+    <input required type="email" id="email" placeholder="Enter your e-mail address">
     <label for="number" id="number-label">Number</label>
     <input type="number" id="number" min="0" max="100" placeholder="Enter any number between 0 - 100">
-    <select type="dropdown" id="dropdown"></select>
+    <select type="dropdown" id="dropdown">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+    </select>
     <input type="radio" name="recommend" id="recommendYes" value="Yes">
     <input type="radio" name="recommend" id="recommendNo" value="No">
     <input type="radio" name="recommend" id="recommendMaybe" value="Maybe">
