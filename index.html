@@ -8,48 +8,69 @@
 </head>
 
 <body>
-  <h1 id="title">freeCodeCamp Survey Form</h1>
-  <p id="description">Thank you for taking the time to help us improve the platform
+  <h1 class="center" id="title">freeCodeCamp Survey Form</h1>
+  <p class="center" id="description">Thank you for taking the time to help us improve the platform
   </p>
-  <form action="" id="survey-form">
-    <label for="name" id="name-label">Name</label>
-    <input required id="name" type="text" placeholder="Enter your name">
-    <br>
-    <label for="email" id="email-label">Email</label>
-    <input required type="email" id="email" placeholder="Enter your e-mail address">
-    <br>
-    <label for="number" id="number-label">Number</label>
-    <input type="number" id="number" min="0" max="100" placeholder="Enter any number between 0 - 100">
-    <br>
-    <select type="dropdown" id="dropdown">
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-    </select>
-    <div>
-      <label for="recommendYes">I'd Recommend <input type="radio" name="recommend" id="recommendYes"
-          value="Yes"></label>
-      <label for="recommendNo">I would not recommend <input type="radio" name="recommend" id="recommendNo"
-          value="No"></label>
-      <label for="recommendMaybe">Maybe I'd recommend <input type="radio" name="recommend" id="recommendMaybe"
-          value="Maybe"></label>
+  <div class="center"> 
 
-    </div>
+    <form  action="" id="survey-form">
+      <div class="margin">
+        <label for="name" id="name-label">Name</label>
+        <input class="sixty" required id="name" type="text" placeholder="Enter your name">
+      </div>
+    
+      <div class="margin">
+        <label for="email" id="email-label">Email</label>
+        <input class="sixty" required type="email" id="email" placeholder="Enter your e-mail address">
+      </div>
+      
+      <div class="margin">
+        <label for="number" id="number-label">Number</label>
+        <input class="sixty" type="number" id="number" min="0" max="100" placeholder="Enter any number between 0 - 100">
+      </div>
+      
+      <div class="margin">
+        <label for="dropdown">Select an option</label>
+        <select type="dropdown" id="dropdown" >
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </div>
+      
 
-    <div>
-      <label for="frontEndField">Front-end <input type="checkbox" name="field" id="frontEndField"
-          value="FrontEnd"></label>
-      <label for="backEndField">Back-end <input type="checkbox" name="field" id="backEndField" value="Back-End"></label>
-      <label for="dataField">Data Science <input type="checkbox" name="field" id="dataField"
-          value="Data Science"></label>
+      <div class="margin">
+        <h3>Would you recommend us?</h3>
+        <label for="recommendYes">I'd Recommend <input type="radio" name="recommend" id="recommendYes"
+            value="Yes"></label>
+        <label for="recommendNo">I would not recommend <input type="radio" name="recommend" id="recommendNo"
+            value="No"></label>
+        <label for="recommendMaybe">Maybe I'd recommend <input type="radio" name="recommend" id="recommendMaybe"
+            value="Maybe"></label>
+  
+      </div>
+  
+      <div class="margin">
+        <h3>Choose your field(s) of interest?</h3>
+        <label for="frontEndField">Front-end <input type="checkbox" name="field" id="frontEndField"
+            value="FrontEnd"></label>
+        <label for="backEndField">Back-end <input type="checkbox" name="field" id="backEndField" value="Back-End"></label>
+        <label for="dataField">Data Science <input type="checkbox" name="field" id="dataField"
+            value="Data Science"></label>
+  
+      </div>
+      
+      <div class="margin">
+        <h3>Feel free to provide your feedback</h3>
+        <textarea name="" id="additional" cols="30" rows="10"></textarea>
+      </div>
+      
+      
+  
+      <button id="submit">Submit</button>
+    </form>
 
-    </div>
-
-    <label for="additional"></label>
-    <textarea name="" id="additional" cols="30" rows="10"></textarea>
-    <br>
-
-    <button id="submit">Submit</button>
-  </form>
+  </div>
+  
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
   <!--
