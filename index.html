@@ -14,22 +14,40 @@
   <form action="" id="survey-form">
     <label for="name" id="name-label">Name</label>
     <input required id="name" type="text" placeholder="Enter your name">
+    <br>
     <label for="email" id="email-label">Email</label>
     <input required type="email" id="email" placeholder="Enter your e-mail address">
+    <br>
     <label for="number" id="number-label">Number</label>
     <input type="number" id="number" min="0" max="100" placeholder="Enter any number between 0 - 100">
+    <br>
     <select type="dropdown" id="dropdown">
       <option value="1">Option 1</option>
       <option value="2">Option 2</option>
     </select>
-    <input type="radio" name="recommend" id="recommendYes" value="Yes">
-    <input type="radio" name="recommend" id="recommendNo" value="No">
-    <input type="radio" name="recommend" id="recommendMaybe" value="Maybe">
+    <div>
+      <label for="recommendYes">I'd Recommend <input type="radio" name="recommend" id="recommendYes"
+          value="Yes"></label>
+      <label for="recommendNo">I would not recommend <input type="radio" name="recommend" id="recommendNo"
+          value="No"></label>
+      <label for="recommendMaybe">Maybe I'd recommend <input type="radio" name="recommend" id="recommendMaybe"
+          value="Maybe"></label>
 
-    <input type="checkbox" name="field" id="frontEndField" value="FrontEnd">
-    <input type="checkbox" name="field" id="backEndField" value="Back-End">
-    <input type="checkbox" name="field" id="dataField" value="Data Science">
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+      <label for="frontEndField">Front-end <input type="checkbox" name="field" id="frontEndField"
+          value="FrontEnd"></label>
+      <label for="backEndField">Back-end <input type="checkbox" name="field" id="backEndField" value="Back-End"></label>
+      <label for="dataField">Data Science <input type="checkbox" name="field" id="dataField"
+          value="Data Science"></label>
+
+    </div>
+
+    <label for="additional"></label>
+    <textarea name="" id="additional" cols="30" rows="10"></textarea>
+    <br>
+
     <button id="submit">Submit</button>
   </form>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
